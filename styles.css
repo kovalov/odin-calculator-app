@@ -1,0 +1,97 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.calculator {
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.calculator__display {
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #2f3640;
+  color: #f5f6fa;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator__keyboard {
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  flex: 1 1 25%;
+  border: none;
+  background-color: #dcdde1;
+}
+
+.button:hover {
+  background-color: rgba(220, 221, 225, 0.6);
+}
+
+.button:nth-child(4n) {
+  background-color: #e1b12c;
+  color: #f5f6fa;
+}
+
+.button:nth-child(4n):hover {
+  background-color: rgba(225, 177, 44, 0.8);
+}
+
+.button:nth-child(-n + 3) {
+  background-color: #7f8fa6;
+}
+
+.button:nth-child(-n + 3):hover {
+  background-color: rgba(127, 143, 166, 0.8);
+}
+
+.button:nth-child(-n + 16) {
+  border-bottom: 1px solid #2f3640;
+}
+
+.button:nth-child(n) {
+  border-right: 1px solid #2f3640;
+}
+
+.button:nth-child(4n) {
+  border-right: none;
+}
+
+.button:last-child {
+  background-color: #e1b12c;
+  color: #f5f6fa;
+  border-right: none;
+}
+
+.button:last-child:hover {
+  background-color: rgba(225, 177, 44, 0.8);
+}
+
+.keyboard__button {
+}
+
+.keyboard__button--0 {
+  flex: 1 1 50%;
+}
